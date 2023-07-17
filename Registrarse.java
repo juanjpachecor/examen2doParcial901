@@ -6,9 +6,9 @@ public void login(Request request) {
    // como autenticación, verificación en una base de datos, etc.
    
    // Ejemplo de validación básica de las credenciales
-   if (username.equals("admin") && password.equals("admin")) {
-       // Las credenciales son correctas, realizar acciones adicionales
+   if (username != null && password != null) {
+       // Las credenciales se han recogido correctamente, realizar acciones adicionales
    } else {
-       // Las credenciales son incorrectas, mostrar mensaje de error
+       // Las credenciales no se han proporcionado, mostrar mensaje de error
    }
 }
